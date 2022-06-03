@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{ background:#ebebeb !important;}
+.login-right .logo-bci {
+	/* padding: 1rem 0 4rem; */
+	position: absolute;
+	bottom: 2%;
+	right: 3%;
+	float: ;
+}
+.login-right .logo-bci img {
+	float: right;
+	width: 33%;
+}
+.footer {
+	width: 100%;
+	background: #00468c;
+	float: left;
+	text-align: center;
+	color: #fff;
+	margin: 2% 0 0;
+	
+}
+.footer h3{font-size:15px;}
+/* login page  css */
+/* custom radio button start  css */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/* custom radio button end  css */
+.login-area{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/login-bg.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.login-area::before{
+    content: '';
+    top:0;
+    left:0;
+    background: rgba(139,159,183,0.7);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+.login-part{
+    position: relative;
+    width:60%;
+    height:calc(100vh - 20vh);
+    background: #fff;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    -webkit-box-shadow:0px 0px 7px 0px rgb(223 223 245);
+    -moz-box-shadow:   0px 0px 7px 0px rgb(223 223 245);
+    box-shadow:        0px 0px 7px 0px rgb(223 223 245);
+}
+.login-left{
+    width:50%;
+    float: left;
+    background-color: rgba(15,33,139,1);
+    height: inherit;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    border-radius: 10px 0px 0px 10px;
+}
+.my-slide{ text-align:center; }
+.menuopt {width:30px;height:30px; background:#fff; border-radius:100%;
+	position: relative;
+	margin-top: 10px;
+	
+	
+	
+	padding: 3px;
+	cursor: pointer;
+	
+	font-size: 23px !important;
+	color: #00f;
+}
+.menuopt:hover{ color:#000;}
+.login-left h1{color: #fff;  font-size: 5rem;margin-top: 10px;}
+.login-left h4{color: #fff;  font-size: 2rem;}
+.login-left .logo{ background: #fff; width:120px; height: 120px; padding: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;  }
+.login-left .logo img{ width:100%;}
+.login-right{ display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+   
+    height: inherit;
+    padding: 10px;
+}
+
+
+.login-right h2 {
+	color: rgba(15,33,139,1);
+	font-size: 5rem;
+	font-weight: bold;
+	margin: 15%;
+}
+.login-right form {
+	position: relative;
+	width: 100%;
+	padding: 0 20px;
+	height: inherit;
+	margin-bottom: 11%;
+}
+.login-right .my-input { font-size: 17px;
+    width: 100%;
+    height: 40px;
+    margin: 10px 2px;
+    padding: 10px 10px 10px 40px; 
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+.login-right .my-input:focus{ border:2px solid rgb(148 159 218);box-shadow: 0px 0px 5px -1px #0f218b;}
+.login-right .my-input:focus ~ .usr { color: rgba(15,33,139,1);}
+.login-right .my-input:focus ~ .pwd { color: rgba(15,33,139,1);}
+.inp-control{ position: relative;}
+.usr, .pwd {
+    position: absolute;
+    top: 16px;
+    left: 11px;
+    font-size: 3rem!important;
+    color: #999;
+}
+.login-right .login-btn{
+background-color: rgba(15,33,139,1);
+padding: 15px 70px;
+font-size: 2rem;
+margin-bottom: 10px;
+border-radius: 5px;
+outline: none;
+cursor: pointer;
+border: none;
+transition: all 0.3s;
+color:#fff;
+width:92%;
+position: absolute;
+bottom: 0;
+
+}
+.login-btn:hover {
+    opacity: 0.6;
+}
+#has-error_usr,#has-error_psd{ color:red; visibility:hidden;}
+
+/* my dashboard */
+/* width */
+::-webkit-scrollbar { width: 11px;}
+/* Track */
+::-webkit-scrollbar-track { background: #fff;}
+ /* Handle */
+::-webkit-scrollbar-thumb {  background:rgb(58, 110, 162);}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {  background: rgb(1, 49, 97);}
+
+
+
+
+.set{ width:100%; float:left;  position:relative; margin-top: 60px;}
+/* ====================================================header CSS ===================================================*/
+header{ width:100%; float:left; position:fixed; top:0;left:0; padding:0.5% 0; background:#fff; z-index:27;box-shadow:0px 0px 4px 1px #0A56A2;}
+header .logo{ width:100%; float:left;}
+header .logo img{ width:75px;}
+header .bar{ float:right; text-align:right; width:100%; padding:0 2%;}
+header .baar {
+	
+	position: relative;
+	float: right;
+	
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 4px;
+	border-radius: 8px;
+	padding: 5px 5px;
+	
+}
+header .baar:hover{background: #f7f7f7;}
+
+header .baar .my_1 {
+	background: transparent;
+	border: none;
+	/* height: 5px; */
+	font-size: 20px;
+	padding: 0px 8px;
+	cursor: pointer;
+	color: #999;
+	line-height: 37px;
+}
+
+
+
+
+.drop1{ display:block !important;}
+header .baar .drop {display: none;position:absolute;top:100%;right:13px;padding:0;margin:0;width:180px;background: #fff;
+	text-align: left;border-top:2px solid #00bfe9;box-shadow:0 0px 4px 1px #999;}
+header .baar .drop li{display:block;width:100%;float:left;}
+header .baar .drop li a{color:#797979;font-size:14px;padding:15px 10px;border-bottom:1px solid #ebebeb;width:100%;float:left;}
+header .baar  .drop li a i{display: inline-block;  padding-right: 10px;}
+header .baar  .drop li a:hover{ color:#000; }
+header .baar  .drop .caret_m {line-height: 20px;color:#00bfe9;font-size: 25px;position: absolute;right: 0%;top:-18px;}
+
+header .baar .my_1:hover{ color:#222;}
+/* ====================================================side menu CSS ===================================================*/
+.set .part_1{ float:left; position:relative; height:100%; }
+
+.set .mynav.hoverme{width:6%;}
+.set .mynav.hoverme + .part_2{width: 95%;}
+.set .mynav.hoverme .menu-content:hover .set .mynav.hoverme {width:17%;}
+.set .mynav.hoverme  .menu-content:hover .set .mynav.hoverme  .nav-side-menu{width:16%;}
+.set .mynav.hoverme .menu-content:hover .set .mynav.hoverme + .part_2{width: 84%;}
+.set .mynav.hoverme  .menu-content:hover .set .mynav.hoverme  .nav_min{ display:block;}
+.set .mynav.hoverme  .menu-content:hover .set .mynav.hoverme  .nav-side-menu li a i {	font-size: 15px; line-height:3.5; padding-right: 10px;width:50px;}
+.set .mynav.hoverme .nav_min{display:none;-webkit-transition: all 1s ease; -moz-transition: all 1s ease;-o-transition:all 1s ease;-ms-transition:all 1s ease;
+transition:all 1s ease;}
+ .set .mynav.hoverme .nav-side-menu {overflow: hidden;   font-size: 12px;  font-weight: 200;  background-color:rgb(0, 70, 140);  position: fixed; top: 58px; width: 6%;height:92%;bottom:50%;  color: #e1ffff; box-shadow:3px 0px 4px 1px #999; -webkit-transition: all 1s ease;  -moz-transition: all 1s ease;-o-transition: all 1s ease;  -ms-transition: all 1s ease;  transition: all 1s ease; }
+.set .mynav.hoverme .nav-side-menu ul,.nav-side-menu li { float: left;width: 100%; list-style: none;  padding: 0px;  margin: 0px;  line-height: 54px;  cursor: pointer; }
+.set .mynav.hoverme .nav-side-menu ul {border-bottom:1px solid #0e6c81;}
+.set .mynav.hoverme .nav-side-menu li {padding-left: 0px;border-left: 3px solid transparent;border-bottom: 1px solid transparent;}
+.set .mynav.hoverme .nav-side-menu li a {text-decoration: none;	color: #fff;	font-size: 14px;}
+.set .mynav.hoverme .nav-side-menu li a i{font-size: 25px;padding-left:20px;width:61px;padding-right:12px;float:left;line-height:2;}
+.set .mynav.hoverme .nav-side-menu li:hover {border-left:3px solid rgba(255,255,255,0.6);background-color: rgba(0,0,0,0.3);-webkit-transition: all 1s ease;-moz-transition: all 1s ease;  -o-transition: all 1s ease;  -ms-transition: all 1s ease;  transition: all 1s ease;}
+.set .mynav.hoverme .nav-side-menu li.active {border-left: 3px solid rgba(255,255,255,0.6); background-color: rgba(0,0,0,0.3);  -webkit-transition: all 1s ease;  -moz-transition: all 1s ease;  -o-transition: all 1s ease;  -ms-transition: all 1s ease;  transition: all 1s ease;}
+.set .mynav.hoverme .nav-side-menu .menu-list .menu-content {    display: block;  }
+/*  navmy{}**/
+.set .mynav + .part_2 > .footer2{left:16%;width:84%;}
+
+.set .mynav{width:17%;}
+.set .mynav .nav-side-menu{width:16%;}
+.set .mynav + .part_2{width: 84%;}
+
+.set .mynav  .nav-side-menu li a i {	font-size: 15px; line-height:3.5; padding-right: 10px;width:50px;}
+.set .mynav .nav_min{  display:block; -webkit-transition: all 1s ease; -moz-transition: all 1s ease;-o-transition:all 1s ease;-ms-transition:all 1s ease;transition:all 1s ease; line-height:2; margin-top: 12px;}
+ .set .mynav .nav-side-menu {overflow: auto;   font-size: 12px;  font-weight: 200;  background-color:rgb(0, 70, 140);  position: fixed; top: 58px; width: 16%;height:92%;bottom:50%;  color: #e1ffff; box-shadow:3px 0px 4px 1px #999; -webkit-transition: all 1s ease;  -moz-transition: all 1s ease; -o-transition: all 1s ease;  -ms-transition: all 1s ease;  transition: all 1s ease; }
+.set .mynav .nav-side-menu ul,.set .mynav .nav-side-menu li { float: left;width: 100%; list-style: none;  padding: 0px;  margin: 0px;  line-height: 54px;  cursor: pointer; }
+.set .mynav .nav-side-menu ul {}
+.set .mynav .nav-side-menu li { padding-left: 0px; border-left: 3px solid transparent; border-bottom: 1px solid transparent;}
+.set .mynav .nav-side-menu li a {text-decoration:none;color:#fff;font-size:14px;position:relative;width:100%;float:left;
+	border-bottom: 1px solid #00466F;}
+	.set .mynav .nav-side-menu li a.active { background:#021a33;}
+.set .mynav .nav-side-menu li a i {font-size:25px;padding-left:20px;width:61px;padding-right:12px;float: left;line-height: 2;}
+.set .mynav .nav-side-menu li:hover {border-left:3px solid rgba(255,255,255,0.6);background-color: rgba(0,0,0,0.3);-webkit-transition: all 1s ease;-moz-transition: all 1s ease;  -o-transition: all 1s ease;  -ms-transition: all 1s ease;  transition: all 1s ease;}
+.set .mynav .nav-side-menu li.active {border-left: 3px solid rgba(255,255,255,0.6); background-color: rgba(0,0,0,0.3);  -webkit-transition: all 1s ease;  -moz-transition: all 1s ease;  -o-transition: all 1s ease;  -ms-transition: all 1s ease;  transition: all 1s ease;}
+.set .mynav .nav-side-menu .menu-list .menu-content {    display: block;  }
+.has-sub > a > .holder { width: 20px; height: 20px; position: absolute; top: 0; right: 0;}
+.has-sub > a > .holder::before { display: block; position: absolute; content: "\f0d7"; font-family:FontAwesome;}
+.has-sub.open > a > .holder::before { display: block; position: absolute;  content: "\f0d8"; font-family:FontAwesome;}
+.set .mynav .nav-side-menu .sub_menu .nav_min{ font-size:12px;}
+.set .mynav .nav-side-menu .sub_menu i {font-size: 20px;width: 54px;line-height: 49px;padding-left: 23px;}
+ ul.sub_menu > li > ul{background: rgba(0,0,0,0.6);}
+.mynav #my{ display:block;}
+.mynav #my1{ display:block;}
+.hoverme #my{ display:block;}
+.hoverme #my1{ display:block;}
+
+
+
+
+
+
+
+.navbar-collapse {	padding-right:0px;	padding-left: 0px;}
+.admin_mainview{width:100%; float:left; padding: 23px 14px 7px; border-bottom: 1px solid rgb(255, 255, 255);}
+.img_user {	width: 45px;	float: left;	height:45px;}
+.img_user img{ width:100%; height:100%; border-radius:100px;border: 2px solid #ebebeb;}
+.admin_view {	width: 124px;	float: left;	padding: 6px 14px;}
+.admin_view h1 {font-size: 13px;margin: 0;font-weight: bold;}
+.admin_view p {	font-size: 11px;	padding: 3px 0px;}
+.msg {position: absolute;width: 100%;background-color: rgba(0,0,0,0.3);padding: 12px 15px;bottom: 1%;left: 0;box-shadow: 2px 3px 13px -3px #999;color: #fff;}
+.msg h4{margin: 0;color: #fff;font-size: 13px;}
+#p1{ display:none;}
+.nav-side-menu li > .sub_menu{background-color:rgba(0,0,0,0.1); display:none;}
+.nav-side-menu li > .sub_menu ul{ display:none}
+.mynav.hoverme .nav-side-menu li > .sub_menu{background-color:rgba(0,0,0,0.1); display:none ;}
+.mynav.hoverme .nav-side-menu li > .sub_menu ul{ display:none;}
+
+/* ====================================================Dashboard CSS ===================================================*/
+.set .part_2{ -webkit-transition: all 1s ease;  -moz-transition: all 1s ease; -o-transition: all 1s ease;  -ms-transition: all 1s ease;  transition: all 1s ease;	padding: 0% 1% 0% 1%;clear: both;	float: right;position: relative;width: 95%;}
+
+.item > img{width:100% !important; height:70vh !important;}
+.overview {
+	width: 100%;
+	float: left;
+	background: #fff;
+	box-shadow: 0px 0px 5px 0px #222;
+	padding: 2% 1%;
+	margin: 8px 0;
+	border-radius: 10px;
+}
+
+td, td {
+    padding: 13px 14px !important;
+    white-space: nowrap;
+}
+#actual-btn{visibility:hidden; display:none;}
+#file-chosen{
+  margin-right: 0.3rem;
+  font-family: sans-serif;
+}
+/* page responsive */
+@media only screen and (max-width:600px){
+    .login-part {
+       
+        width: 93%;
+        height: calc(100vh - 5vh);
+       
+    }
+    .login-left {
+       
+        display: none;
+    }
+    .login-right {
+      
+        width: 100%;
+       
+    }
+    .baar{ display:none;}
+.nav-side-menu {display: none;	z-index: 9;	width: 10%;}
+.set .part_2 {	width: 100%;}
+.navbar-collapse {	padding-right:0px;	padding-left: 0px;}
+.nav-side-menu li a {font-size: 12px;}
+.nav-side-menu li a i {font-size: 14px;	padding-left: 10px;	width: 20px;padding-right: 20px;}
+.navbar-toggle .icon-bar {background: #999;}
+.navbar-toggle {background-color: #ebebeb;}
+.set .part_1:hover{width:6%;}
+.set .part_1:hover + .part_2{width: 100%;}
+.set .part_1:hover .nav_min{ display:none;}
+.set .part_1:hover .nav-side-menu li a i {font-size: 14px;	padding-left: 10px;	width: 20px;padding-right: 20px;}
+}
+@media (max-width:860px){
+    .login-part {
+       
+        width: 97%;
+        height: calc(100vh - 5vh);
+       
+    }
+}

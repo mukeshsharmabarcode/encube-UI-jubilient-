@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Location Label Printing| Jubilant-Generics</title>
+    <link rel="stylesheet" href="./css/my-style.css">
+  <link rel="stylesheet" href="css/bootstrap-table.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" />
+ 
+  
+</head>
+<body>
+	
+    
+<header>
+    
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-2 col-xs-3"><div class="logo"><a href="Dashboard.html"><img src="img/logo.png" class="img-responsive"></a></div></div>
+    <div class="col-lg-9 col-xs-5">
+    <div  style="float:right;padding: 1% 0;">
+    <span style=" font-size:18px">Company/Site Code:</span><strong style="color: #00466F; font-size:16px;margin-left: 8px;">NNl45</strong>
+    </div>
+    
+        
+    </div>
+    
+    
+    
+    <div class="col-lg-1 col-xs-4 ">
+    <div class="baar" onclick="myprofile();">
+    
+     <span class="fa fa-power-off my_1"  ></span>
+    <ul id="drop1" class="drop">
+    <div class="caret_m"><i class="fa fa-caret-up"></i></div>
+    <li><a href="#"><i class="fa fa-user"></i>Change Password</a></li>
+    <li><a href="#"><i class="fa fa-envelope"></i>Edit Profile</a></li>
+    <li><a  id="work"><i class="fa fa-lock"></i>Signout</a></li>
+    
+    </ul>
+    
+    </div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          </div>
+    </div>
+    </div>
+    </header>
+    <section class="set">
+    <div class="part_1 mynav">
+        <div class="nav-side-menu"  id="myNavbar" >
+           <div class="menu-list">
+               <ul id="myslide" class="menu-content">
+                    <li class="myslidemenu">
+                      <a href="dashboard.html" target="_blank">
+                         <i class="fa fa-tachometer"></i>
+                         <span class="nav_min"> Dashboard</span>
+                      </a>
+                   </li>
+                   <li class="myslidemenu has-sub">
+                      <a href="javascript:void(0)" id="my1">
+                          <i class="fa fa-tasks"></i>
+                          <span class="nav_min"> Masters </span>
+                      </a>
+                      <ul class="sub_menu">
+                           <li >
+                            <a href='user-master.html'  target="_blank">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <span class="nav_min">User Master</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href='user-right.html' target="_blank">
+                               <i class="fa fa-dot-circle-o"></i>
+                               <span class="nav_min">Group Rights Master</span>
+                             </a>
+                
+                      </li>
+                      <li>
+                        <a href='company-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Company Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='site-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Site Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='location-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Location Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='email-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Email Configuration Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='file-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='template-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Template Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='number-series.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Number Series - Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='custom-field-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Custom Field Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='info-card.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Info-Card type Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Document Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='cabinet-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">IP Configuration master</span>
+                         </a>                
+                       </li>
+                   </ul>
+                    </li>
+                     <li class="myslidemenu has-sub active">
+                      <a href="javascript:void(0)" id="my1" >
+                          <i class="fa fa-exchange"></i>
+                          <span class="nav_min"> Tranaction</span>
+                      </a>
+                      <ul class="sub_menu">
+                         <li >
+                            <a href='role-delagation.html'  target="_blank">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <span class="nav_min">Role Delagation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='document-personalization.html' target="_blank">
+                               <i class="fa fa-dot-circle-o"></i>
+                               <span class="nav_min">File/Document Personalization</span>
+                             </a>
+                
+                      </li>
+                      <li>
+                        <a href='location-label-printing.html' class="active" target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Location Label Printing</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-mapping.html'  target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File/Document Mapping</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='issuance-request-number.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Issuance Request Number Gen.</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='issuance-request-approval.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Issuance Request Approval</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-status-update.html' target="_blank" >
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Document Status Update</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='file-return-submission.html'  target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File Return & Submission</span>
+                         </a>                
+                       </li>
+                       
+                   </ul>
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="stock-reconciliation.html" id="my1"  target="_blank">
+                          <i class="fa fa-recycle "></i>
+                          <span class="nav_min"> Stock Reconciliation</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-file"></i>
+                          <span class="nav_min"> Reports</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-user"></i>
+                          <span class="nav_min"> Admin</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-font"></i>
+                          <span class="nav_min"> Audit Logs</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-question "></i>
+                          <span class="nav_min"> Help</span>
+                      </a>
+                      
+                    </li>
+                     
+                    
+                </ul>
+      
+          </div>
+           <div class="my-slide"><i class="fa fa-angle-double-right   menuopt"   title="Menu change" id="navopt"></i></div>
+    </div>
+    </div>
+    <div class="part_2">
+<div class="col-lg-12"><h3> <i class="fa fa-rocket"></i> Location Label Printing</h3></div>
+<div class="col-lg-12">
+<div class="overview">
+<div class="col-lg-3">
+<div class="radio">
+      <label><input type="radio" name="optradio" checked>Print</label>
+    </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="radio">
+      <label><input type="radio" name="optradio" checked>Reprint</label>
+    </div>
+    </div>
+
+<div class="my-table">
+<div id="toolbar">
+</div>
+<table id="table" data-toggle="table"  data-page-size="5" data-search="true"
+                                        >
+<thead>
+                                            <tr >
+                                              <th data-field="SelectAll" data-checkbox="true" > Select All</th>
+                                                <th data-field="LocationId" data-sortable="true">Location Id</th>
+                                                <th data-field="Rack" data-sortable="true">Rack</th>
+                                                <th data-field="Shelve" data-sortable="true">Shelve</th>
+                                               
+                                                <th data-field="Update Reason">Update Reason</th>                                                <th data-field="Action">Action</th>
+                                            </tr>
+                                        </thead>
+
+    <tbody>
+      <tr>
+      
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td><i class="fa fa-trash-o"></i>&nbsp;&nbsp;<i class="fa fa-pencil"></i></td>
+        
+      </tr>
+      
+     
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="overview">
+
+    
+ <div class="col-lg-6">
+ <div class="form-group">
+  <label>Update Reason</label>
+  <textarea class="form-control"></textarea>
+</div>
+
+ </div>
+<div class="col-lg-12">
+
+<button class="btn btn-success btn-lg pull-right " style="margin:6px">Print</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/control.js" >  </script>
+<script src="js/bootstrap-table.js"></script>
+<script src="js/tableExport.js"></script>
+<script src="js/bootstrap-table-export.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script>
+$(document).ready(function() {
+  $("#datepicker-group").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+  $("#datepicker-group1").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+});
+</script>
+</body>
+</html>

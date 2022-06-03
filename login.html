@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Login | Jubilant-Generics</title>
+    <link rel="stylesheet" href="./css/my-style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" />
+    <style type="text/css">
+        .login-area {
+    
+    background-image: url(https://mukeshsharmabarcode.github.io/Encube-UI/images/bg.jpg);
+   
+}
+.login-area::before {
+    
+    background: rgba(0, 0, 0, 0.2);
+   
+}
+.login-left {
+  
+    background-color: rgba(0,131,192,1);
+   
+}
+.login-left .logo img {
+    width: auto;
+}
+.login-left .logo {
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-right h2 {
+    color: rgb(0 131 192);
+    
+}
+.login-right .login-btn {
+    background-color: rgb(0 131 192);
+    margin-top: 10px;
+    border-radius: 5px;
+    
+    
+    width: 100%;
+    position: relative;
+   
+}
+.login-right .my-input:focus {
+    border: 2px solid rgb(0 131 192);
+    box-shadow: 0px 0px 5px -1px #0083c0;
+}
+.login-right .my-input:focus ~ .usr {
+    color: rgb(0 131 192);
+}
+.login-right .my-input:focus ~ .pwd {
+        color: rgb(0 131 192);
+}
+.login-right .my-input {
+    font-size: 17px;
+    width: 100%;
+    height: 40px;
+    margin: 10px 2px 0;
+    padding: 10px 10px 10px 40px;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+.login-right {
+   
+    position: relative;
+}
+.version {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: #999;
+}
+.login-right .logo-bci img {
+    float: right;
+    width: 60%;
+}
+
+
+    </style>
+</head>
+<body>
+	<section class="login-area">
+        <div class="login-part">
+            <div class="login-left">
+                <<!-- h1>Welcome</h1> -->
+                <div class="logo">
+                    <!-- <img src="./img/logo.png"> -->
+                    <img src="https://mukeshsharmabarcode.github.io/Encube-UI/images/logo-lg.png">
+                </div>
+               <!--  <h4>Document Storage and Retrieval System</h4> -->
+            </div>
+            <div class="login-right">
+                <div class="logo-bci">
+                    <img src="./img/logo-bci.png">
+                </div>
+                <h2>Log in</h2>
+              <form onSubmit="return Fillup()" action="dashboard.html">
+                  <div class="inp-control">
+                    <input type="text" class=" my-input" id="usr" placeholder="Enter User Name" autocomplete="off" >
+                    <i class="fa fa-user  usr"></i>
+                    <span id="has-error_usr" >Plz Enter User Name </span>
+                   </div>
+                    <div class="inp-control">
+                   <input type="password" class=" my-input " id="pwd" placeholder="Enter Correct Password" autocomplete="off">
+                    <i class="fa fa-lock pwd"></i>
+                    <span id="has-error_psd">Plz Enter Corrected Password </span>
+                </div>
+               
+                    <button type="submit" class="login-btn">Sign in</button>
+                </form>
+                 <div class="version"><p>Version : 1.0.0.0</p></div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+   function Fillup(){
+	   var usr = document.getElementById('usr');
+	   var pwd = document.getElementById("pwd");
+	   var erruser = document.getElementById("has-error_usr");
+	    var errpwd = document.getElementById("has-error_psd");
+	   if( usr.value=="" && pwd.value == ""){
+		   erruser.style.visibility="visible";
+		    errpwd.style.visibility="visible";
+		   return false;
+		   
+	   }
+	   
+	   
+   }
+	</script>
+</body>
+</html>

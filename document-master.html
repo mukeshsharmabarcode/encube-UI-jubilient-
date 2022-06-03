@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document Master | Jubilant-Generics</title>
+    <link rel="stylesheet" href="./css/my-style.css">
+  <link rel="stylesheet" href="css/bootstrap-table.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" />
+  
+</head>
+<body>
+	
+    
+<header>
+    
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-2 col-xs-3"><div class="logo"><a href="Dashboard.html"><img src="img/logo.png" class="img-responsive"></a></div></div>
+    <div class="col-lg-9 col-xs-5">
+    <div  style="float:right;padding: 1% 0;">
+    <span style=" font-size:18px">Company/Site Code:</span><strong style="color: #00466F; font-size:16px;margin-left: 8px;">NNl45</strong>
+    </div>
+    
+        
+    </div>
+    
+    
+    
+    <div class="col-lg-1 col-xs-4 ">
+    <div class="baar" onclick="myprofile();">
+    
+     <span class="fa fa-power-off my_1"  ></span>
+    <ul id="drop1" class="drop">
+    <div class="caret_m"><i class="fa fa-caret-up"></i></div>
+    <li><a href="#"><i class="fa fa-user"></i>Change Password</a></li>
+    <li><a href="#"><i class="fa fa-envelope"></i>Edit Profile</a></li>
+    <li><a  id="work"><i class="fa fa-lock"></i>Signout</a></li>
+    
+    </ul>
+    
+    </div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          </div>
+    </div>
+    </div>
+    </header>
+    <section class="set">
+    <div class="part_1 mynav">
+        <div class="nav-side-menu"  id="myNavbar" >
+           <div class="menu-list">
+               <ul id="myslide" class="menu-content">
+                    <li class="myslidemenu">
+                      <a href="dashboard.html" target="_blank">
+                         <i class="fa fa-tachometer"></i>
+                         <span class="nav_min"> Dashboard</span>
+                      </a>
+                   </li>
+                   <li class="myslidemenu has-sub active">
+                      <a href="javascript:void(0)" id="my1">
+                          <i class="fa fa-tasks"></i>
+                          <span class="nav_min"> Masters </span>
+                      </a>
+                      <ul class="sub_menu">
+                           <li >
+                            <a href='user-master.html'  target="_blank">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <span class="nav_min">User Master</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href='user-right.html' target="_blank">
+                               <i class="fa fa-dot-circle-o"></i>
+                               <span class="nav_min">Group Rights Master</span>
+                             </a>
+                
+                      </li>
+                      <li>
+                        <a href='company-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Company Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='site-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Site Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='location-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Location Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='email-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Email Configuration Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='file-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='template-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Template Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='number-series.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Number Series - Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='custom-field-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Custom Field Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='info-card.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Info-Card type Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-master.html' class="active" target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Document Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='cabinet-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">IP Configuration master</span>
+                         </a>                
+                       </li>
+                   </ul>
+                    </li>
+                    
+                     <li class="myslidemenu has-sub">
+                      <a href="javascript:void(0)" id="my1">
+                          <i class="fa fa-exchange"></i>
+                          <span class="nav_min"> Tranaction</span>
+                      </a>
+                      <ul class="sub_menu">
+                         <li >
+                            <a href='role-delagation.html'  target="_blank">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <span class="nav_min">Role Delagation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='document-personalization.html' target="_blank">
+                               <i class="fa fa-dot-circle-o"></i>
+                               <span class="nav_min">File/Document Personalization</span>
+                             </a>
+                
+                      </li>
+                      <li>
+                        <a href='location-label-printing.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Location Label Printing</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-mapping.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File/Document Mapping</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='issuance-request-number.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Issuance Request Number Gen.</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='issuance-request-approval.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Issuance Request Approval</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-status-update.html'  target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Document Status Update</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='file-return-submission.html'  target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File Return & Submission</span>
+                         </a>                
+                       </li>
+                       
+                   </ul>
+                    </li>
+                  
+                    <li class="myslidemenu ">
+                      <a href="stock-reconciliation.html" id="my1"  target="_blank">
+                          <i class="fa fa-recycle "></i>
+                          <span class="nav_min"> Stock Reconciliation</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-file"></i>
+                          <span class="nav_min"> Reports</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-user"></i>
+                          <span class="nav_min"> Admin</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-font"></i>
+                          <span class="nav_min"> Audit Logs</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-question "></i>
+                          <span class="nav_min"> Help</span>
+                      </a>
+                      
+                    </li>
+                     
+                    
+                </ul>
+      
+          </div>
+           <div class="my-slide"><i class="fa fa-angle-double-right   menuopt"   title="Menu change" id="navopt"></i></div>
+    </div>
+    </div>
+    <div class="part_2">
+<div class="col-lg-12"><h3> <i class="fa fa-rocket"></i> Document Master</h3></div>
+<div class="col-lg-12">
+<div class="overview">
+
+
+<div class="col-lg-4">
+<div class="form-group">
+  <label>Infocard Type/Subtype</label>
+  <select id="ddlModels" class="form-control">
+ 
+<option value="0" >Select</option>
+  <option value="1">BMR</option>
+  <option value="2">BPR</option>
+  <option value="3">BCR</option>
+  <option value="4">AWO</option>
+  
+</select>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+  <label>Document Number</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+  <label>Document Title</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+  <label>Revision Number</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+<label>Training Completion Date</label>
+  <div id="datepicker-group" class="input-group date" data-date-format="mm-dd-yyyy">
+    <input class="form-control" name="data" type="text" placeholder="YYYY/MM/DD" />
+    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+  <label>Released/Effective Date</label>
+  <div id="datepicker-group2" class="input-group date" data-date-format="mm-dd-yyyy">
+    <input class="form-control" name="data" type="text" placeholder="YYYY/MM/DD" />
+    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+  <label>Review Date</label>
+  <div id="datepicker-group3" class="input-group date" data-date-format="mm-dd-yyyy">
+    <input class="form-control" name="data" type="text" placeholder="YYYY/MM/DD" />
+    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+<label>Obsolete Date</label>
+  <div id="datepicker-group4" class="input-group date" data-date-format="mm-dd-yyyy">
+    <input class="form-control" name="data" type="text" placeholder="YYYY/MM/DD" />
+    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+<label>Expired Date</label>
+  <div id="datepicker-group5" class="input-group date" data-date-format="mm-dd-yyyy">
+    <input class="form-control" name="data" type="text" placeholder="YYYY/MM/DD" />
+    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="form-group">
+  <label>Old Document No</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col-lg-12">
+<fieldset>
+    <legend>Global Optinal Fields:</legend>
+    <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Dispostion Info1</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Dispostion Info2</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Dispostion Info3</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Dispostion Info4</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Dispostion Info5</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Dispostion Generic Comments</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Project Name</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Packet Info1</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Packet Info2</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+ 
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Packet Info3</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Packet Info4</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Packet Info5</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-3">
+<div class="form-group">
+      <label>NNJ Packet Generic Comments</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+    
+  </fieldset>
+</div>
+<div class="col-lg-12">
+<fieldset id="groupfield">
+    <legend> </legend>
+    <div class="col-lg-3">
+<div class="form-group">
+      <label>Plant Code</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Product Code</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Material Code</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Material Description.</label>
+  <textarea class="form-control"></textarea>
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Equipment Code</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Equipment Description</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>DIR Number</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Batch Number</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Lot Number</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Process Order</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Work Order</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>PM Notification</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Purchase Order</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-3">
+<div class="form-group">
+      <label>Vendor</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-3">
+<div class="form-group">
+      <label>Service Entry Sheet</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Inspection Plan</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+  <div class="col-lg-3">
+<div class="form-group">
+      <label>Recipe</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-3">
+<div class="form-group">
+      <label>BOM</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+ <div class="col-lg-3">
+<div class="form-group">
+      <label>QM Notification</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+<div class="col-lg-3">
+<div class="form-group">
+      <label>Asset Number</label>
+  <input type="text" class="form-control">
+</div>
+</div>
+   <div class="col-lg-3">
+<div class="form-group">
+  <label>Update Reason</label>
+  <input type="text" class="form-control">
+</div>
+</div> 
+  </fieldset>
+</div>
+
+
+
+<div class="col-lg-12">
+
+
+
+<button class="btn btn-success btn-md pull-right "><b>Save</b></button>
+<button class="btn btn-danger btn-md pull-right" style="margin:0 5px;"><b>Cancel</b></button>
+<button class="btn btn-primary pull-right" ><i class="fa fa-download"></i> Download</button>
+<input type="file" id="actual-btn">
+
+<label for="actual-btn" class="btn btn-warning pull-right" style="margin:0 5px;"><i class="fa fa-upload"></i> <b>Upload</b></label>
+<span id="file-chosen" class="pull-right"></span>
+
+</div>
+</div>
+<div class="overview">
+<div class="my-table">
+<div id="toolbar">
+</div>
+<table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"data-page-size="10"
+                                        data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
+<thead>
+                                            <tr >
+                                                
+                                                <th data-field="Infocard Type/Subtype" data-sortable="true">Infocard Type/Subtype</th>
+                                                <th data-field="Document Number" data-sortable="true">Document Number</th>
+                                                <th data-field="Document Title" data-sortable="true">Document Title</th>
+                                                <th data-field="Review No." data-sortable="true">Review No.</th>                                                <th data-field="Training Completion Date">Training Completion Date</th>
+                                                <th data-field="Released/Effective Date">Released/Effective Date</th>
+                                                <th data-field="Review Date" data-sortable="true">Review Date</th>
+                                                <th data-field="Obsolete Date" data-sortable="true">Obsolete Date</th>
+                                                <th data-field="Expired Date" data-sortable="true">Expired Date</th>                                                <th data-field="Old Document No">Old Document No</th>
+                                                <th data-field="NNJ Dispostion Info1">NNJ Dispostion Info1</th>
+                                                <th data-field="NNJ Dispostion Info2" data-sortable="true">NNJ Dispostion Info2</th>
+                                                <th data-field="NNJ Dispostion Info4" data-sortable="true">NNJ Dispostion Info3</th>
+                                                <th data-field="NNJ Dispostion Info5" data-sortable="true">NNJ Dispostion Info5</th>                                                <th data-field="NNJ Dispostion Generic Comments">NNJ Dispostion Generic Comments</th>
+                                                <th data-field="NNJ Project Name">NNJ Project Name</th>
+                                                <th data-field="NNJ Packet Info1" data-sortable="true">NNJ Packet Info1</th>
+                                                <th data-field="NNJ Packet Info2" data-sortable="true">NNJ Packet Info2</th>
+                                                <th data-field="NNJ Packet Info3" data-sortable="true">NNJ Packet Info3</th>                                                <th data-field="NNJ Packet Info4">NNJ Packet Info4</th>
+                                                <th data-field="NNJ Packet Info5">NNJ Packet Info5</th>
+                                                <th data-field="NNJ Packet Generic Comments" data-sortable="true">NNJ Packet Generic Comments</th>
+                                                <th data-field="Plant Code" data-sortable="true">Plant Code</th>
+                                                <th data-field="Product Code" data-sortable="true">Product Code</th>                                                <th data-field="Material Code">Material Code</th>
+                                                <th data-field="Material Description.">Material Description.</th>
+                                                <th data-field="Equipment Code" data-sortable="true">Equipment Code</th>
+                                                <th data-field="Equipment Description" data-sortable="true">Equipment Description</th>
+                                                <th data-field="Vendor" data-sortable="true">DIR Number</th>                                                <th data-field="Batch Number">Batch Number</th>
+                                                <th data-field="Lot Number">Lot Number</th>
+                                                <th data-field="Process Order">Process Order</th>
+                                                <th data-field="Work Order">Work Order</th>
+                                                <th data-field="PM Notification">PM Notification</th>
+                                                <th data-field="Purchase Order">Purchase Order</th>
+                                                <th data-field="Vendor">Vendor</th>
+                                                <th data-field="Service Entry Sheet">Service Entry Sheet</th>
+                                                <th data-field="Inspection Plan">Inspection Plan</th>
+                                                <th data-field="Recipe">Recipe</th>
+                                                <th data-field="BOM">BOM</th>
+                                                <th data-field="QM Notification">QM Notification</th>
+                                                <th data-field="Asset Number">Asset Number</th>
+                                                <th data-field="Update Reason">Update Reason</th>
+                                                <th data-field="Action">Action</th>
+                                            </tr>
+                                        </thead>
+
+    <tbody>
+      <tr>
+      
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+               
+        
+        <td><i class="fa fa-trash-o"></i>&nbsp;&nbsp;<i class="fa fa-pencil"></i></td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/control.js" >  </script>
+<script src="js/bootstrap-table.js"></script>
+<script src="js/tableExport.js"></script>
+<script src="js/bootstrap-table-export.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script>
+$(document).ready(function() {
+  $("#datepicker-group").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+  $("#datepicker-group1").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+   $("#datepicker-group2").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+   $("#datepicker-group3").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+   $("#datepicker-group4").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+   $("#datepicker-group5").datepicker({
+    format: "yyyy/mm/dd",
+    todayHighlight: true,
+    autoclose: true,
+    clearBtn: true
+  });
+});
+</script>
+<script type="text/javascript">
+    $(function () {
+        $("#ddlModels").change(function () {
+            if ($(this).val() != 1) {
+                $("#groupfield").hide();
+				 
+                
+            } else {
+                $("#groupfield").show();
+				 
+            }
+        });
+    });
+</script>
+</body>
+</html>

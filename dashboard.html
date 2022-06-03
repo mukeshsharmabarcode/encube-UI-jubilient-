@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DashBoard1 </title>
+    <link rel="stylesheet" href="./css/my-style.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+   <style type="text/css">
+     header .logo {
+    width: 100%;
+    float: left;
+    height: 47px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header .logo img {
+    width: auto;
+    height: 35px;
+}
+.set .mynav .nav-side-menu,.set .mynav.hoverme .nav-side-menu  {
+   
+    background-color: rgb(0 131 192);
+   
+}
+
+.set .mynav .nav-side-menu li a.active,.set .mynav.hoverme .nav-side-menu li a.active {
+    background: rgba(0,0,0,0.3);
+}
+.set .mynav .nav-side-menu li a , .set .mynav.hoverme .nav-side-menu li a{
+    
+    border-bottom: 1px solid #119bcd;
+}
+
+.footer {
+    width: 100%;
+    background: #0083c0;
+    float: left;
+    text-align: center;
+    color: #fff;
+    margin: 2% 0 0;
+}
+   </style>
+ 
+  
+</head>
+<body>
+	
+    
+<header>
+    
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-2 col-xs-3"><div class="logo"><a href="Dashboard.html">
+      <img src="https://mukeshsharmabarcode.github.io/Encube-UI/images/logo-lg.png" class="img-responsive"></a></div></div>
+    <div class="col-lg-9 col-xs-5">
+    <div  style="float:right;padding: 1% 0;">
+    <span style=" font-size:18px">Company/Site Code:</span><strong style="color: #00466F; font-size:16px;margin-left: 8px;">NNl45</strong>
+    </div>
+    
+        
+    </div>
+    
+    
+    
+    <div class="col-lg-1 col-xs-4 ">
+    <div class="baar" onclick="myprofile();">
+    
+     <span class="fa fa-power-off my_1"  ></span>
+    <ul id="drop1" class="drop">
+    <div class="caret_m"><i class="fa fa-caret-up"></i></div>
+    <li><a href="#"><i class="fa fa-user"></i>User Name</a></li>
+    <li><a href="#"><i class="fa fa-key "></i>Change Password</a></li>
+    <li><a  id="work"><i class="fa fa-lock"></i>Signout</a></li>
+    
+    </ul>
+    
+    </div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          </div>
+    </div>
+    </div>
+    </header>
+    <section class="set">
+    <div class="part_1 mynav">
+    
+        <div class="nav-side-menu"  id="myNavbar" >
+           <div class="menu-list">
+               <ul id="myslide" class="menu-content">
+                    <li class="myslidemenu">
+                      <a href="dashboard.html" class="active" target="_blank">
+                         <i class="fa fa-tachometer"></i>
+                         <span class="nav_min"> Dashboard</span>
+                      </a>
+                   </li>
+                   <li class="myslidemenu has-sub">
+                      <a href="javascript:void(0)" id="my1">
+                          <i class="fa fa-tasks"></i>
+                          <span class="nav_min"> Masters </span>
+                      </a>
+                      <ul class="sub_menu">
+                           <li >
+                            <a href='user-master.html'  target="_blank">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <span class="nav_min">User Master</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">ok</a></li>
+                                <li><a href="#">me</a></li>
+                            </ul>
+                            
+                        </li>
+                        <li>
+                            <a href='user-right.html' target="_blank">
+                               <i class="fa fa-dot-circle-o"></i>
+                               <span class="nav_min">Group Rights Master</span>
+                             </a>
+                
+                      </li>
+                      <li>
+                        <a href='company-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Company Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='site-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Site Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='location-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Location Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='email-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Email Configuration Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='file-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='template-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Template Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='number-series.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Number Series - Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='custom-field-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Custom Field Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='info-card.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Info-Card type Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Document Master</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='cabinet-master.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">IP Configuration master</span>
+                         </a>                
+                       </li>
+                   </ul>
+                    </li>
+                     <li class="myslidemenu has-sub">
+                      <a href="javascript:void(0)" id="my1">
+                          <i class="fa fa-exchange"></i>
+                          <span class="nav_min"> Tranaction</span>
+                      </a>
+                      <ul class="sub_menu">
+                         <li >
+                            <a href='role-delagation.html'  target="_blank">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <span class="nav_min">Role Delagation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='document-personalization.html' target="_blank">
+                               <i class="fa fa-dot-circle-o"></i>
+                               <span class="nav_min">File/Document Personalization</span>
+                             </a>
+                
+                      </li>
+                      <li>
+                        <a href='location-label-printing.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Location Label Printing</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-mapping.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File/Document Mapping</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='issuance-request-number.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Issuance Request Number Gen.</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='issuance-request-approval.html' target="_blank">
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Issuance Request Approval</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='document-status-update.html' target="_blank" >
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">Document Status Update</span>
+                         </a>                
+                       </li>
+                       <li>
+                        <a href='file-return-submission.html' target="_blank" >
+                           <i class="fa  fa-dot-circle-o"></i>
+                           <span class="nav_min">File Return & Submission</span>
+                         </a>                
+                       </li>
+                       
+                   </ul>
+                    </li>
+                    
+                    <li class="myslidemenu ">
+                      <a href="stock-reconciliation.html" id="my1" target="_blank">
+                          <i class="fa fa-recycle "></i>
+                          <span class="nav_min"> Stock Reconciliation</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-file"></i>
+                          <span class="nav_min"> Reports</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-user"></i>
+                          <span class="nav_min"> Admin</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-font"></i>
+                          <span class="nav_min"> Audit Logs</span>
+                      </a>
+                      
+                    </li>
+                    <li class="myslidemenu ">
+                      <a href="javascript:void(0)" id="my1" target="_blank">
+                          <i class="fa fa-question "></i>
+                          <span class="nav_min"> Help</span>
+                      </a>
+                      
+                    </li>
+                     
+                    
+                </ul>
+      
+          </div>
+           <div class="my-slide"><i class="fa fa-angle-double-right   menuopt"   title="Menu change" id="navopt"></i></div>
+    </div>
+    </div>
+    <div class="part_2">
+   
+<div class="col-lg-12"><h3> <i class="fa fa-rocket"></i> DashBoard</h3></div>
+
+<style type="text/css">
+.card {
+       font-size: .875rem;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333;
+    background: #fff;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+        font-weight: 300;
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        line-height: 1.5em;
+}
+.card .card-header {
+    z-index: 3!important;
+    text-align: right;
+        margin: 0 15px;
+    padding: 0;
+    position: relative;
+    color: #fff;
+    border-bottom: none;
+    background: transparent;
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+ .card .card-header .card-icon {
+    border-radius: 3px;
+    background-color: #999;
+    padding: 8px;
+    margin-top: -20px;
+    margin-right: 15px;
+    float: left;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(255 152 0 / 4);
+        background: linear-gradient(
+60deg
+,#ffa726,#fb8c00);
+        text-align: right;
+        color: #fff;
+}
+ .second{
+    background: #e74c3c !important;
+ }
+ .third{
+  background: #2c3e50 !important;
+ }
+  .fourth{
+   background: #00468c!important;
+ }
+ .fifth{background: #186ec3 !important;}
+ .card .card-header .card-icon i {
+    font-size: 36px;
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    color: #fff;
+}   
+.card-category {
+    color: #999;
+    font-size: 14px;
+        margin: 0;
+        padding-top: 10px;
+        text-align: right;
+        line-height: 2rem;
+        white-space: nowrap;
+            overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+}
+.card-title {
+    margin: 0;
+        color: #3c4858;
+            line-height: 1.4em;
+                font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+}
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+.card-footer {
+   
+    padding: 0;
+    padding-top: 10px;
+    margin: 20px 15px 10px;
+    border-radius: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  
+        border-top: 1px solid #eee;
+    
+}
+ .stats {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+    display: inline-flex;
+}
+ .stats i{
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+    margin-right: 3px;
+    margin-left: 3px;
+   
+}
+ .stats a{color: #9c27b0; font-size: 12px;
+    line-height: 22px;font-weight: 300;}
+
+    .card-m{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333;
+    background: #fff;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    font-size: .875rem;
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+            line-height: 1.5em;
+}
+.card-header-m {
+    border-radius: 3px;
+    /* margin-top: -20px; */
+    padding: 15px;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(255 152 0 / 40);
+    background: linear-gradient(
+60deg
+,#ffa726,#fb8c00);
+    margin: -20px 15px;
+    z-index: 3!important;
+    color: #fff;
+    position: relative;
+}
+.card-title-m {
+    margin-bottom: 3px;
+    color: #fff;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+.card-m .card-body-m {
+    padding: .9375rem 20px;
+    position: relative;
+        flex: 1 1 auto;
+        background: #fff;
+
+        margin-top: 20px;
+}
+.tab-content-m {
+    display: block;
+    margin-top: 20px;
+    max-height: 250px;
+    min-height: 228px;
+    overflow-y: auto;
+}
+ .card-m .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+ .card-m  .table>tbody>tr {
+    position: relative;
+}
+.card-m .table tr:first-child td {
+    border-top: none;
+}
+ .card-m .table>tbody>tr>td, .card-m .table>tbody>tr>th, .card-m .table>tfoot>tr>td, .card-m .table>tfoot>tr>th, .card-m  .table>thead>tr>td, .card-m .table>thead>tr>th {
+    padding: 12px 8px !important;
+    vertical-align: middle;
+    border-color: #ddd;
+    white-space: normal;
+}
+ .card-m .table>tbody>tr>td:hover{ background: #eee; cursor: pointer; }
+ .card-m .table td,  .card-m .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(0,0,0,.06);
+}
+</style>
+<div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <i class="fa fa-file"></i>
+                  </div>
+                  <p class="card-category" title="Documents Pending for Approval">documents pending for approval</p>
+                  <h3 class="card-title">50k
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="fa fa-clock-o r"></i>
+                   Last 24 Hours
+                  </div>
+                </div>
+              </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon second">
+                    <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+                  </div>
+                  <p class="card-category" title="Total issuance">Total issuance</p>
+                  <h3 class="card-title">10K
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                 <div class="stats">
+                    <i class="fa fa-clock-o r"></i>
+                   Last 24 Hours
+                  </div>
+                </div>
+              </div>
+ </div>
+ <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon third">
+                    <i class="fa fa-file-o "></i>
+                  </div>
+                  <p class="card-category" title="Total Quick issuance documents">Total Quick issuance documents</p>
+                  <h3 class="card-title">10
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="fa fa-calendar "></i>
+                   2 day ago
+                  </div>
+                </div>
+              </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon fourth">
+                    <i class="fa fa-repeat"></i>
+                  </div>
+                  <p class="card-category" title="Total Return">Total return </p>
+                  <h3 class="card-title">20k
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                       <i class="fa fa-calendar "></i>
+                   2 day ago
+                  </div>
+                </div>
+              </div>
+ </div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon fifth">
+                    <i class="fa fa-file-text "></i>
+                  </div>
+                  <p class="card-category" title="Total Overdue documents (issuance) including quick issuance till date">Total Overdue documents (issuance) including quick issuance till date</p>
+                  <h3 class="card-title">500
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="fa fa-clock-o r"></i>
+                   Last 24 Hours
+                  </div>
+                </div>
+              </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <i class="fa fa-user-times "></i>
+                  </div>
+                  <p class="card-category" title=" Total unauthorized access of documents"> Total unauthorized access of documents</p>
+                  <h3 class="card-title">490
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                       <i class="fa fa-calendar "></i>
+                   1 day ago
+                  </div>
+                </div>
+              </div>
+ </div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon  third">
+                    <i class="fa fa-th-list"></i>
+                  </div>
+                  <p class="card-category" title="Last inventory count">Last inventory count</p>
+                  <h3 class="card-title">49
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                   <div class="stats">
+                    <i class="fa fa-clock-o r"></i>
+                   Last 24 Hours
+                  </div>
+                </div>
+              </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card ">
+                <div class="card-header">
+                  <div class="card-icon  second">
+                    <i class="fa fa-puzzle-piece "></i>
+                  </div>
+                  <p class="card-category">Incomplete transactions</p>
+                  <h3 class="card-title">4950
+                    <small></small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                 <div class="stats">
+                       <i class="fa fa-calendar "></i>
+                   1 day ago
+                  </div>
+                </div>
+              </div>
+ </div>
+<div class="col-lg-6 col-md-12">
+              <div class="card-m">
+                <div class="card-header-m fifth">
+                  <h4 class="card-title-m">Admin message area</h4>
+                  </div>
+                
+                <div class="card-body-m">
+                  <div class="tab-content-m">
+                    <div class="tab-pane active" id="profile">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                           
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                           
+                          </tr>
+                          <tr>
+                            
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            
+                          </tr>
+                          <tr>
+                           
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                           
+                          </tr>
+                          <tr>
+                            
+                            <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<div class="col-lg-6 col-md-12">
+              <div class="card-m">
+                <div class="card-header-m third">
+                  <h4 class="card-title-m">Document status</h4>
+                  </div>
+                
+                <div class="card-body-m">
+                  <canvas id="myChart" ></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+              <div class="card-m">
+                <div class="card-header-m fourth">
+                  <h4 class="card-title-m"> Location wise inventory count </h4>
+                  </div>
+                
+                <div class="card-body-m">
+               <div id="myChart1" ></div>
+                </div>
+              </div>
+            </div>
+<div class="footer"><h3>©Bar Code India Limited. All rights reserved.</h3></div>
+</div>
+</section>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/control.js" >  </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+
+
+<script src="js/jquery-3.3.1.slim.min.js" ></script>
+<script src="js/duplicate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+var xValues = ["Under review", "Expired", ];
+var yValues = [55, 49];
+var barColors = [
+  "#fb8c00",
+  "#2c3e50"
+ 
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+      legend: {
+          position: 'right',
+          // display: false
+         
+         
+      
+  }
+    // title: {
+    //   display: false,
+    //   text: ""
+    // },
+    
+  }
+ 
+});
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Loction', 'All'],
+  ['Italy',55],
+  ['France',49],
+  ['Spain',44],
+  ['USA',24],
+  ['Argentina',15]
+]);
+
+var options = {
+  title:''
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('myChart1'));
+  chart.draw(data, options);
+}
+</script>
+<script>
+  $(document).ready(function () {
+
+ 
+
+  if (window.IsDuplicate()) {
+
+ 
+
+    // alert user the tab is duplicate
+
+   console.log("Window Already Opened ");
+
+ 
+
+    // close the current tab
+
+    window.close();
+
+ 
+  }else{
+console.log("Window no Already Opened ");
+  }
+
+   
+});
+
+</script>
+
+
+</body>
+</html>
